@@ -3,6 +3,7 @@ package com.example.student.kolos;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 
 import butterknife.BindView;
@@ -14,7 +15,10 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.Edtxt_podajNr)
     EditText Edtxt_podajNr ;
 
-@OnClick(R.id.btn_wybierzDane)
+    @BindView(R.id.btn_wybierzDane)
+    Button btn_wybierzDane;
+
+    @OnClick(R.id.btn_wybierzDane)
 void OnClick(){
 
     Intent intent = new Intent( MainActivity.this, Main2Activity.class);
