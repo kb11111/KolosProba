@@ -26,6 +26,7 @@
         android:layout_marginTop="150dp"
         android:text="Aby złożyć zamówienie wpisz numer stolika i wybierz pozycje z listy"
         android:gravity="center"
+        android:textSize="13sp"
         />
 
     <EditText
@@ -34,14 +35,15 @@
         android:layout_height="wrap_content"
         android:hint="Podaj numer stolika"
         android:gravity="center"/>
+
+
     <Button
-        android:id="@+id/btn_wybierzDane"
+        android:id="@+id/btn_wybierzDanie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:text="wybierz dane"
+        android:layout_marginTop="120dp"
+        android:text="WYBIERZ DANIE"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimary"/>
-
 
 </LinearLayout>

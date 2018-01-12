@@ -15,14 +15,18 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.Edtxt_podajNr)
     EditText Edtxt_podajNr ;
 
-    @BindView(R.id.btn_wybierzDane)
-    Button btn_wybierzDane;
+    @BindView(R.id.btn_wybierzDanie)
+    Button btn_wybierzDanie;
 
-    @OnClick(R.id.btn_wybierzDane)
+    @OnClick(R.id.btn_wybierzDanie)
 void OnClick(){
 
     Intent intent = new Intent( MainActivity.this, Main2Activity.class);
-    startActivity(intent);
+        Bundle bundle = new Bundle();
+        //String wpisanyTekst = Et_WpiszMiasto.getText().toString();
+       // bundle.putString("KEY", wpisanyTekst);
+        intent.putExtras(bundle);
+        startActivity(intent);
 }
 
     @Override

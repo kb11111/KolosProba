@@ -21,13 +21,19 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         ButterKnife.bind(this);
 
+        Bundle przekazanedane = getIntent().getExtras();
+
+
+
         ArrayList<Coffee> coffees=new ArrayList<>();
         coffees.add(new Coffee("Latte","12.00 zł"));
         coffees.add(new Coffee("Espresso","5.00 zł"));
         coffees.add(new Coffee("Mocca","15.00 zł"));
         coffees.add(new Coffee("Cappucino","9.00 zł"));
+
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recycler.setLayoutManager(layoutManager);
+
         CoffeeAdapter coffeeAdaper = new CoffeeAdapter(coffees);
         recycler.setAdapter(coffeeAdaper);
     }
